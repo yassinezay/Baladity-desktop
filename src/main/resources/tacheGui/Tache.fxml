@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+            prefHeight="109.0"
+            prefWidth="847.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21"
+            fx:controller="edu.esprit.controllers.tache.TacheController">
+    <children>
+        <HBox alignment="CENTER" layoutX="13.0" layoutY="9.0" prefHeight="90.0" prefWidth="819.0"
+              style="-fx-border-color: #012545; -fx-border-radius: 8; -fx-border-width: 2; -fx-background-color: white;">
+            <children>
+                <Text fx:id="TF_Titre_Tache" fill="#012545" strokeType="OUTSIDE" strokeWidth="0.0" text="TITRE"
+                      wrappingWidth="289.33677101135254">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                    <HBox.margin>
+                        <Insets right="5.0"/>
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="TF_DateTache" fill="#012545" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE"
+                      wrappingWidth="150.1367130279541">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                    <HBox.margin>
+                        <Insets right="5.0"/>
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="TF_Etat_Tache" fill="#012545" strokeType="OUTSIDE" strokeWidth="0.0" text="ETAT"
+                      wrappingWidth="128.5367374420166">
+                    <font>
+                        <Font name="System Bold" size="18.0"/>
+                    </font>
+                    <HBox.margin>
+                        <Insets right="5.0"/>
+                    </HBox.margin>
+                </Text>
+                <Button mnemonicParsing="false" onAction="#viewDetailTache"
+                        style="-fx-background-color: white; -fx-border-radius: 8; -fx-border-color: #012545;">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0"/>
+                    </HBox.margin>
+                    <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/detailT.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#deleteTache"
+                        style="-fx-background-color: white; -fx-border-radius: 8; -fx-border-color: #012545;"
+                        textFill="#ea0707">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0"/>
+                    </HBox.margin>
+                    <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/deleteT.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#modifierTache"
+                        style="-fx-background-color: white; -fx-border-radius: 8; -fx-border-color: #012545;">
+                    <font>
+                        <Font name="System Bold" size="12.0"/>
+                    </font>
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0"/>
+                    </HBox.margin>
+                    <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/editT.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="70.0" prefWidth="781.0" stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.reclamation.ReclamationItemComponentController">
+   <children>
+      <HBox prefHeight="71.0" prefWidth="805.0">
+         <children>
+            <AnchorPane fx:id="AnchoPaneMessage1111" prefHeight="71.0" prefWidth="807.0" style="-fx-background-color: #E5E4E2; -fx-background-radius: 10;">
+               <children>
+                  <ImageView fx:id="arrowrightimg" fitHeight="33.0" fitWidth="49.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/right-arrow.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="TFsujet_reclamationaff" layoutX="69.0" layoutY="22.0" prefHeight="27.0" prefWidth="155.0" styleClass="label-styled" stylesheets="@css/styles.css" text="Sujet" />
+                  <Label fx:id="TFdate_reclamationaff" layoutX="263.0" layoutY="22.0" prefHeight="27.0" prefWidth="155.0" styleClass="label-styled" stylesheets="@css/styles.css" text="Date" />
+                  <Label fx:id="TFstatus_reclamationaff" layoutX="462.0" layoutY="21.0" prefHeight="27.0" prefWidth="161.0" styleClass="label-styled" stylesheets="@css/styles.css" text="status" />
+                  <Button layoutX="730.0" layoutY="14.0" mnemonicParsing="false" onAction="#ReclamationEditAction" prefHeight="42.0" prefWidth="47.0" style="-fx-background-color: #E5E4E2; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 13;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/edit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="677.0" layoutY="14.0" mnemonicParsing="false" onAction="#deleteReclamationAction" prefHeight="27.0" prefWidth="26.0" style="-fx-background-color: #E5E4E2; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 13;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="628.0" layoutY="14.0" mnemonicParsing="false" onAction="#viewDetailReclamationAction" prefHeight="42.0" prefWidth="47.0" style="-fx-background-color: #E5E4E2; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 13;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/detail.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+   <styleClass>
+      <String fx:value="label-styled" />
+      <String fx:value="transparent-background" />
+   </styleClass>
+</AnchorPane>

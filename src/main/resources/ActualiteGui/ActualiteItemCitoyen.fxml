@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="843.0" style="-fx-border-color: #012545; -fx-border-width: 4;" stylesheets="@Actualite.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.Actualite.ActualiteController">
+   <children>
+      <Text fx:id="TitreActualiteAff" layoutX="438.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="titre" wrappingWidth="392.53679847717285">
+         <font>
+            <Font name="AdobeHeitiStd-Regular" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="DescriptionActualiteAff" layoutX="438.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="description" wrappingWidth="248.53687477111816">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="DateActualiteAff" layoutX="238.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date" wrappingWidth="162.13677406311035">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="ImageActualite" fitHeight="317.0" fitWidth="411.0" layoutX="14.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="128.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="publié le: " wrappingWidth="101.45700073242188">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="detailButton1" layoutX="438.0" layoutY="39.0" mnemonicParsing="false" onAction="#viewDetailActualiteActionC" prefHeight="46.0" prefWidth="58.0" style="-fx-background-color: #CCCCCC9B;">
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/detailsIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

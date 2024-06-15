@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="firstborderpane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="845.0" prefWidth="1310.0" style="-fx-background-color: #012545;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.user.AdminDashboard">
+    <left>
+        <VBox fx:id="MainLeftSidebar" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="680.0" prefWidth="260.0" style="-fx-background-radius: 10; -fx-background-color: white;" translateX="0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="224.0" fitWidth="258.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/LOGO66.png" />
+                    </image>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </ImageView>
+                <Button mnemonicParsing="false" onAction="#BTNGestionTache" prefHeight="54.0" prefWidth="193.0" styleClass="button-menu" stylesheets="@../css/style.css" text="Tache" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionEvennement" prefHeight="54.0" prefWidth="193.0" styleClass="button-menu" stylesheets="@../css/style.css" text="Evennement" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionUser" prefHeight="54.0" prefWidth="193.0" styleClass="button-menu" stylesheets="@../css/style.css" text="Utilisateur" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionRec" prefHeight="54.0" prefWidth="193.0" styleClass="button-menu" stylesheets="@../css/style.css" text="Réclamation" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionAct" prefHeight="54.0" prefWidth="193.0" styleClass="button-menu" stylesheets="@../css/style.css" text="Actualité" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionEquipement" prefHeight="54.0" prefWidth="193.0" styleClass="button-menu" stylesheets="@../css/style.css" text="Equipement" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="20.0" right="10.0" top="20.0" />
+            </BorderPane.margin>
+            <effect>
+                <DropShadow />
+            </effect>
+        </VBox>
+    </left>
+    <center>
+        <BorderPane fx:id="SecondBorderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="571.0" prefWidth="845.0" style="-fx-background-color: white; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+            </BorderPane.margin>
+            <top>
+                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="82.0" prefWidth="830.0" style="-fx-background-color: #012545; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ToggleButton mnemonicParsing="false" onAction="#BTNToggleSidebar" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 10;">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/toggle.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Arial Bold" size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </ToggleButton>
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" textFill="#012545">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/settings.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Arial Bold" size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </BorderPane.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </HBox>
+            </top>
+            <center>
+                <AnchorPane fx:id="MainAnchorPaneBaladity" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="702.0" prefWidth="991.0" styleClass="white-backgroung" stylesheets="@../css/style.css">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" styleClass="white-backgroung" stylesheets="@../css/style.css">
+                           <children>
+                              <Label text="Les Municipalité">
+                                 <font>
+                                    <Font name="Corbel Bold" size="28.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                              <Button fx:id="buttonreturnuser" mnemonicParsing="false" onAction="#buttonreturnuser" prefHeight="54.0" prefWidth="79.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../reclamationGui/css/styles.css">
+                                 <graphic>
+                                    <ImageView fitHeight="55.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../reclamationGui/assets/left-arrow.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="addMuniButton" mnemonicParsing="false" onAction="#addMuni" prefHeight="40.0" prefWidth="220.0" stylesheets="@../css/style.css" text="Nouvelle municipalité" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="227.0" layoutY="40.0" mnemonicParsing="false" styleClass="transparent" stylesheets="@../css/style.css">
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="200.0" spacing="30.0">
+                           <children>
+                              <HBox prefHeight="200.0" prefWidth="987.0">
+                                 <children>
+                                    <ScrollPane prefHeight="180.0" prefWidth="987.0" styleClass="white-backgroung" stylesheets="@../css/style.css" vbarPolicy="NEVER">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                       <content>
+                                          <HBox fx:id="muniButtonLayout" prefHeight="201.0" prefWidth="954.0" spacing="10.0" styleClass="white-backgroung" stylesheets="@../css/style.css" />
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="55.0" text="Les citoyen">
+                                 <font>
+                                    <Font name="Corbel Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" layoutX="515.0" layoutY="-19.0" prefHeight="100.0" prefWidth="313.0">
+                                       <children>
+                                          <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                             <HBox.margin>
+                                                <Insets right="16.0" />
+                                             </HBox.margin>
+                                             <image>
+                                                <Image url="@../assets/research.png" />
+                                             </image>
+                                          </ImageView>
+                                          <TextField fx:id="tfRecherche" prefHeight="34.0" prefWidth="189.0" promptText="Recherche" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ScrollPane prefHeight="352.0" prefWidth="995.0" styleClass="transparent" stylesheets="@../css/style.css">
+                                 <content>
+                                    <VBox fx:id="usersLayout" prefHeight="443.0" prefWidth="987.0" spacing="10.0" styleClass="white-backgroung" stylesheets="@../css/style.css">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="200.0" spacing="10.0" styleClass="light-grey-background" stylesheets="@../css/style.css">
+                                             <children>
+                                                <Label alignment="CENTER" prefWidth="50.0" text="A" textFill="#575757">
+                                                   <font>
+                                                      <Font name="Corbel Bold" size="20.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <Label layoutX="10.0" layoutY="26.0" prefWidth="170.0" text="Nom du contact" textFill="#575757">
+                                                   <font>
+                                                      <Font name="Corbel Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="60.0" layoutY="26.0" prefWidth="175.0" text="Télèphone" textFill="#575757">
+                                                   <font>
+                                                      <Font name="Corbel Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="231.0" layoutY="26.0" prefWidth="300.0" text="Email" textFill="#575757">
+                                                   <font>
+                                                      <Font name="Corbel Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="406.0" layoutY="26.0" prefWidth="170.0" text="Role" textFill="#575757">
+                                                   <font>
+                                                      <Font name="Corbel Bold" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
+            </center>
+            <effect>
+                <DropShadow />
+            </effect>
+        </BorderPane>
+    </center>
+</BorderPane>

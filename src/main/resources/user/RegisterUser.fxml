@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.user.RegisterController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #003668;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="114.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue !">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="252.0" fitWidth="309.0" layoutX="49.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/Baladia.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="425.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#003668" layoutX="132.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S'inscrire">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="81.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/user.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="tfNom" layoutX="120.0" layoutY="51.0" promptText="Nom" style="-fx-background-color: transparent; -fx-border-color: #003668; -fx-border-width: 0px 0px 2px 0px;" />
+            <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="81.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/mail.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="tfEmail" layoutX="120.0" layoutY="91.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #003668; -fx-border-width: 0px 0px 2px 0px;" />
+            <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="80.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/padlock.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="pfMotDePasse" layoutX="119.0" layoutY="131.0" promptText="Mot de passe" style="-fx-background-color: transparent; -fx-border-color: #003668; -fx-border-width: 0px 0px 2px 0px;" />
+            <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="81.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/padlock.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="pfConfirmMotDePasse" layoutX="120.0" layoutY="173.0" promptText="Confimer mot de passe" style="-fx-background-color: transparent; -fx-border-color: #003668; -fx-border-width: 0px 0px 2px 0px;" />
+            <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="80.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/telephone.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="tfTel" layoutX="119.0" layoutY="215.0" promptText="Télèphone" style="-fx-background-color: transparent; -fx-border-color: #003668; -fx-border-width: 0px 0px 2px 0px;" />
+            <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="80.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/location.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="tfAddresse" layoutX="119.0" layoutY="250.0" promptText="Addresse" style="-fx-background-color: transparent; -fx-border-color: #003668; -fx-border-width: 0px 0px 2px 0px;" />
+            <ComboBox fx:id="muniSelectionComboBox" layoutX="70.0" layoutY="300.0" onAction="#muniSelection" prefHeight="37.0" prefWidth="248.0" promptText="Sélectionnez votre municipalité" style="-fx-border-color: #003668;" styleClass="combo-box" stylesheets="@css/style.css" />
+            <Button fx:id="pickImageButton" layoutX="91.0" layoutY="359.0" mnemonicParsing="false" onAction="#pickImageAction" styleClass="transparent" stylesheets="@css/style.css">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0">
+                     <image>
+                        <Image url="@assets/gallery.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button layoutX="135.0" layoutY="415.0" mnemonicParsing="false" onAction="#registerAction" styleClass="button-style" stylesheets="@css/style.css" text="Inscrire" textFill="WHITE" />
+            <Hyperlink layoutX="99.0" layoutY="462.0" onAction="#handleLabelClick" text="Vous avez déja un compte?" textFill="#003668" />
+            <ImageView fx:id="ImageF" fitHeight="50.0" fitWidth="50.0" layoutX="146.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="takePictureButton" layoutX="204.0" layoutY="359.0" mnemonicParsing="false" onAction="#takePictureAction" styleClass="transparent" stylesheets="@css/style.css">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0">
+                     <image>
+                        <Image url="@assets/camera.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

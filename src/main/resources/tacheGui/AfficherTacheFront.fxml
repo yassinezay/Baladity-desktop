@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="firstborderpane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: #012545;" stylesheets="@../css/TacheCss.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.tache.AfficherTacheFrontController">
+    <left>
+        <VBox fx:id="MainLeftSidebar" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="680.0" prefWidth="260.0" style="-fx-background-radius: 10; -fx-background-color: white;" translateX="0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="224.0" fitWidth="258.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/LOGO24T.png" />
+                    </image>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </ImageView>
+                <Button mnemonicParsing="false" onAction="#BTNGestionTache" prefHeight="54.0" prefWidth="193.0" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-background-color: #012545; -fx-border-color: #FB3640; -fx-border-width: 2; -fx-text-fill: white;" text="Tache" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/GTacheWhiteT.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionEvennement" prefHeight="54.0" prefWidth="193.0" style="-fx-background-radius: 10;" text="Evennement" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionUser" prefHeight="54.0" prefWidth="193.0" style="-fx-background-radius: 10;" text="Utilisateur" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionRec" prefHeight="54.0" prefWidth="193.0" style="-fx-background-radius: 10;" text="Réclamation" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionAct" prefHeight="54.0" prefWidth="193.0" style="-fx-background-radius: 10;" text="Actualité" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionEquipement" prefHeight="54.0" prefWidth="193.0" style="-fx-background-radius: 10;" text="Equipement" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="20.0" right="10.0" top="20.0" />
+            </BorderPane.margin>
+            <effect>
+                <DropShadow />
+            </effect>
+        </VBox>
+    </left>
+    <center>
+        <BorderPane fx:id="SecondBorderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="571.0" prefWidth="845.0" style="-fx-background-color: white; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+            </BorderPane.margin>
+            <top>
+                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="82.0" prefWidth="830.0" style="-fx-background-color: #012545; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ToggleButton mnemonicParsing="false" onAction="#BTNToggleSidebar" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 10; -fx-background-color: white;">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/toggleT.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Arial Bold" size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </ToggleButton>
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 10; -fx-background-color: white;" textFill="#012545">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/settingsT.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Arial Bold" size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                  <Button fx:id="buttonreturnTache" mnemonicParsing="false" onAction="#buttonreturnTache" prefHeight="54.0" prefWidth="79.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../reclamationGui/css/styles.css">
+                     <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../reclamationGui/assets/left-arrow.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </BorderPane.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </HBox>
+            </top>
+            <center>
+                <AnchorPane fx:id="MainAnchorPaneBaladity" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane layoutX="6.0" layoutY="167.0" prefHeight="431.0" prefWidth="866.0">
+                     <left>
+                        <ScrollPane prefHeight="410.0" prefWidth="270.0" style="-fx-border-color: #012545; -fx-border-radius: 5; -fx-background-radius: 10;">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0">
+                                 <children>
+                                    <GridPane fx:id="TODO" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="258.0">
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <BorderPane.margin>
+                              <Insets bottom="10.0" left="14.0" right="10.0" top="10.0" />
+                           </BorderPane.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ScrollPane>
+                     </left>
+                     <center>
+                        <ScrollPane prefHeight="410.0" prefWidth="276.0" style="-fx-border-color: #012545; -fx-border-radius: 5; -fx-background-radius: 10;">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0">
+                                 <children>
+                                    <GridPane fx:id="DOING" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="258.0">
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <BorderPane.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </BorderPane.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ScrollPane>
+                     </center>
+                     <right>
+                        <ScrollPane prefHeight="410.0" prefWidth="271.0" style="-fx-border-color: #012545; -fx-border-radius: 5; -fx-background-radius: 10;">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0">
+                                 <children>
+                                    <GridPane fx:id="DONE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="258.0">
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <BorderPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="14.0" top="10.0" />
+                           </BorderPane.margin>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ScrollPane>
+                     </right>
+                  </BorderPane>
+                  <Text fill="WHITE" layoutX="44.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste Des Taches" wrappingWidth="430.9014892578125">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="searchTacheLabel" layoutX="510.0" layoutY="14.0" onAction="#searchTacheLabel" prefHeight="34.0" prefWidth="239.0" promptText="Rechercher..." style="-fx-background-radius: 8; -fx-border-radius: 5; -fx-border-color: red;">
+                     <effect>
+                        <DropShadow />
+                     </effect></TextField>
+                  <HBox alignment="CENTER" layoutX="9.0" layoutY="115.0" prefHeight="38.0" prefWidth="851.0">
+                     <children>
+                        <TextField fx:id="todoCount" alignment="CENTER" editable="false" prefHeight="34.0" prefWidth="145.0" style="-fx-background-radius: 8; -fx-border-radius: 5; -fx-border-color: red;" text="TO DO">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="80.0" right="80.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="doingCount" alignment="CENTER" editable="false" prefHeight="34.0" prefWidth="145.0" style="-fx-background-radius: 8; -fx-border-radius: 5; -fx-border-color: red;" text="DOING">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="80.0" right="80.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="doneCount" alignment="CENTER" editable="false" prefHeight="34.0" prefWidth="145.0" style="-fx-background-radius: 8; -fx-border-radius: 5; -fx-border-color: red;" text="DONE">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="80.0" right="80.0" top="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </HBox>
+                  <Button contentDisplay="TOP" layoutX="772.0" layoutY="12.0" onAction="#chatBot" prefHeight="29.0" prefWidth="28.0" style="-fx-border-radius: 10; -fx-background-radius: 20;" text="AI">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="73.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/chat-botT.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+               </children>
+                </AnchorPane>
+            </center>
+            <effect>
+                <DropShadow />
+            </effect>
+        </BorderPane>
+    </center>
+</BorderPane>

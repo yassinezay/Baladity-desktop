@@ -1,0 +1,20 @@
+Entities gestionTaches:
+
+|Tache|:
+id_T
+categorie_T
+titre_T
+pieceJointe_T
+date_DT
+date_FT
+desc_T
+etat_T()todo-done-doing(radio)
+*****ALTER TABLE tache MODIFY etat_T ENUM('TO_DO', 'DOING', 'DONE');
+
+
+|commentaireT|:
+id_C
+id_User
+id_T(jointure)(Liste)
+date_C
+text_C

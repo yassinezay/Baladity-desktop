@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.user.MuniItem">
+   <children>
+      <Pane>
+         <children>
+            <Button fx:id="muniButton" alignment="CENTER" layoutY="8.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #003668;" styleClass="municipalite" stylesheets="@../css/style.css" text="Ariana Ville" textFill="WHITE">
+               <font>
+                  <Font name="Corbel" size="28.0" />
+               </font>
+            </Button>
+            <Button layoutX="141.0" layoutY="20.0" minWidth="28.0" mnemonicParsing="false" onAction="#editMuni" prefHeight="23.0" prefWidth="28.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/more-information.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</HBox>

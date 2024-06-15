@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:id="chatContainer" alignment="CENTER" maxHeight="1.7976931348623157E308"
+      maxWidth="1.7976931348623157E308" prefHeight="377.0" prefWidth="592.0" spacing="10"
+      style="-fx-background-color: white;" stylesheets="@../css/TacheCss.css" xmlns="http://javafx.com/javafx/21"
+      fx:controller="edu.esprit.controllers.tache.ChatBotTacheController">
+
+    <TextArea fx:id="chatArea" editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              prefHeight="250" prefWidth="380.0"
+              style="-fx-background-radius: 8; -fx-border-color: #012545; -fx-border-radius: 8; -fx-border-width: 4;"
+              wrapText="true">
+        <VBox.margin>
+            <Insets bottom="10.0" left="20.0" right="20.0"/>
+        </VBox.margin>
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </TextArea>
+    <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+        <children>
+            <TextField fx:id="userInput" onAction="#processInput" prefHeight="58.0" prefWidth="406.0"
+                       promptText="Type here..."
+                       style="-fx-background-radius: 8; -fx-border-color: red; -fx-border-radius: 8; -fx-border-width: 2;">
+                <HBox.margin>
+                    <Insets right="15.0"/>
+                </HBox.margin>
+                <font>
+                    <Font size="14.0"/>
+                </font>
+            </TextField>
+            <ImageView fitHeight="58.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                <HBox.margin>
+                    <Insets right="15.0"/>
+                </HBox.margin>
+                <image>
+                    <Image url="@../assets/chat-botT.gif"/>
+                </image>
+            </ImageView>
+            <Button onAction="#clearConversation" prefHeight="26.0" prefWidth="14.0">
+                <font>
+                    <Font size="14.0"/>
+                </font>
+                <graphic>
+                    <ImageView fitHeight="44.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@../assets/deleteT.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </children>
+        <VBox.margin>
+            <Insets left="20.0" right="20.0"/>
+        </VBox.margin>
+    </HBox>
+</VBox>

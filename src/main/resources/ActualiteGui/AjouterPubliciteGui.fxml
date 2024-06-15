@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="firstborderpane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: #012545;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.Actualite.AjouterPubliciteController">
+    <left>
+        <VBox fx:id="MainLeftSidebar" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="680.0" prefWidth="260.0" style="-fx-background-radius: 10; -fx-background-color: white;" translateX="0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="224.0" fitWidth="258.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/LOGO66.png" />
+                    </image>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </ImageView>
+                <Button mnemonicParsing="false" onAction="#BTNGestionEvennement" prefHeight="54.0" prefWidth="193.0" style="-fx-background-radius: 10;" text="Evénement" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionRec" prefHeight="54.0" prefWidth="193.0" style="-fx-background-radius: 10;" text="Réclamation" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/complain.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionAct" prefHeight="54.0" prefWidth="193.0" style="-fx-background-radius: 10; -fx-background-color: #012545;" text="   Actualité" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/megaphone.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="20.0" right="10.0" top="20.0" />
+            </BorderPane.margin>
+            <effect>
+                <DropShadow />
+            </effect>
+        </VBox>
+    </left>
+    <center>
+        <BorderPane fx:id="SecondBorderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="571.0" prefWidth="845.0" style="-fx-background-color: white; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+            </BorderPane.margin>
+            <top>
+                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="82.0" prefWidth="972.0" style="-fx-background-color: #012545; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ToggleButton mnemonicParsing="false" onAction="#BTNToggleSidebar" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 10;">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@assets/toggle.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Arial Bold" size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </ToggleButton>
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 10;" textFill="#012545">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@assets/settings.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Arial Bold" size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                  <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="82.0" prefWidth="630.0">
+                     <children>
+                        <Label layoutX="469.0" layoutY="26.0" prefHeight="30.0" prefWidth="162.0" text="Amine yahyaoui" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="57.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/profile.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </BorderPane.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </HBox>
+            </top>
+            <center>
+                <AnchorPane fx:id="MainAnchorPaneBaladity" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="imgView_actualite" fitHeight="106.0" fitWidth="228.0" layoutX="205.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true" />
+                  <TextField fx:id="TFtitrepub" layoutX="200.0" layoutY="93.0" prefHeight="46.0" prefWidth="222.0" promptText="titre" stylesheets="@Actualite.css" />
+                  <Label layoutX="72.0" layoutY="97.0" prefHeight="26.0" prefWidth="62.0" text="Titre:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="74.0" layoutY="166.0" prefHeight="27.0" prefWidth="107.0" text="Description:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="TFcontactpub" layoutX="199.0" layoutY="331.0" prefHeight="45.0" prefWidth="222.0" promptText="contact" stylesheets="@Actualite.css" />
+                  <TextField fx:id="TFlocalisationpub" layoutX="199.0" layoutY="423.0" prefHeight="42.0" prefWidth="222.0" promptText="localisation" stylesheets="@Actualite.css" />
+                  <ImageView fx:id="imgView_pub" fitHeight="185.0" fitWidth="336.0" layoutX="488.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" />
+                  <ComboBox fx:id="offrePubCombo" layoutX="592.0" layoutY="87.0" prefHeight="42.0" prefWidth="219.0" promptText="Sélectionnez une offre" stylesheets="@Actualite.css">
+
+                  </ComboBox>
+                  <Text fill="#012545" layoutX="346.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter Publicité" wrappingWidth="275.73670959472656">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="TFdescriptionpub" layoutX="197.0" layoutY="162.0" prefHeight="147.0" prefWidth="223.0" promptText="Description" stylesheets="@Actualite.css" />
+                  <Label layoutX="78.0" layoutY="336.0" prefHeight="27.0" prefWidth="107.0" text="Contact:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="77.0" layoutY="431.0" prefHeight="27.0" prefWidth="115.0" text="Localisation:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="486.0" layoutY="97.0" prefHeight="27.0" prefWidth="65.0" text="Offres:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="488.0" layoutY="197.0" prefHeight="27.0" prefWidth="65.0" text="Image:">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelPub" layoutX="586.0" layoutY="190.0" prefHeight="45.0" prefWidth="230.0" style="-fx-background-color: #f0f0f0;" stylesheets="@Actualite.css">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <graphic>
+                        <Button fx:id="uploadbuttonP" mnemonicParsing="false" onAction="#uploadimgP" prefHeight="26.0" prefWidth="33.0" style="-fx-background-color: #FFFFFF;">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/imageIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </graphic>
+                  </Label>
+                  <Button fx:id="ajouterPubliciteAction" layoutX="103.0" layoutY="521.0" mnemonicParsing="false" onAction="#ajouterPubliciteAction" prefHeight="42.0" prefWidth="129.0" style="-fx-background-color: #012545;" stylesheets="@Actualite.css" text="     Payer" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="tolistActualite" layoutX="281.0" layoutY="521.0" mnemonicParsing="false" onAction="#tolistActualite" prefHeight="43.0" prefWidth="123.0" style="-fx-background-color: #012545;" stylesheets="@Actualite.css" text="   Afficher" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/visible.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label fx:id="numeroexiste" layoutX="205.0" layoutY="385.0" prefHeight="18.0" prefWidth="207.0" text="le numéro déjà existe" textFill="RED" visible="false" />
+                  <Label fx:id="descriptionAlerte" layoutX="207.0" layoutY="139.0" prefHeight="18.0" prefWidth="205.0" text="il faut que longueur supérieur à 15 " textFill="RED" visible="false" />
+                  <Label fx:id="titreAlerte" layoutX="206.0" layoutY="78.0" prefHeight="18.0" prefWidth="205.0" text="il faut que longueur supérieur à 6 " textFill="RED" visible="false" />
+                  <Label fx:id="localisationAlerte" layoutX="206.0" layoutY="403.0" prefHeight="18.0" prefWidth="205.0" text="il faut que longueur supérieur à 3 " textFill="RED" visible="false" />
+                  <Label fx:id="contactAlerte" layoutX="217.0" layoutY="314.0" prefHeight="18.0" prefWidth="126.0" text="8 numéro !!!" textFill="RED" visible="false" />
+                  <Button fx:id="buttonMain1" layoutX="769.0" layoutY="543.0" mnemonicParsing="false" onAction="#buttonMain1">
+                     <graphic>
+                        <ImageView fitHeight="66.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/cancel.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="22.0" fitWidth="35.0" layoutX="121.0" layoutY="532.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/debit-card.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            </center>
+            <effect>
+                <DropShadow />
+            </effect>
+        </BorderPane>
+    </center>
+</BorderPane>

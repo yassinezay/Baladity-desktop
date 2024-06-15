@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="white-backgroung" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.user.UserAccount">
+   <children>
+      <Text fill="#003668" layoutX="230.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier Profil">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="62.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/user.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfNom" layoutX="100.0" layoutY="85.0" promptText="Nom" styleClass="text-input" />
+      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="63.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/mail.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfEmail" layoutX="100.0" layoutY="125.0" promptText="Email" styleClass="text-input" />
+      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="63.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/padlock.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="pfMotDePasse" layoutX="100.0" layoutY="165.0" promptText="Mot de passe" />
+      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="63.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/padlock.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="pfConfirmMotDePasse" layoutX="100.0" layoutY="205.0" promptText="Confimer mot de passe" />
+      <ImageView fx:id="imageF" fitHeight="150.0" fitWidth="200.0" layoutX="349.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="63.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/telephone.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="63.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/location.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="pickImageButton" layoutX="501.0" layoutY="92.0" mnemonicParsing="false" onAction="#pickImage" styleClass="transparent" stylesheets="@css/style.css">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0">
+               <image>
+                  <Image url="@assets/gallery.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="302.0" layoutY="318.0" mnemonicParsing="false" onAction="#modifierUser" prefHeight="30.0" prefWidth="87.0" stylesheets="@css/style.css" text="Modifier" textFill="#fffbfb">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfNumTel" layoutX="100.0" layoutY="245.0" promptText="Télèphone" styleClass="text-input" />
+      <TextField fx:id="tfAddresse" layoutX="100.0" layoutY="285.0" promptText="Addresse" styleClass="text-input" />
+   </children>
+</AnchorPane>

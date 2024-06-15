@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="305.0" prefWidth="560.0"
+            stylesheets="@../css/TacheCss.css"
+            xmlns="http://javafx.com/javafx/21"
+            fx:controller="edu.esprit.controllers.tache.ModifierCommentaireTacheController">
+    <children>
+        <Label layoutX="31.0" layoutY="17.0" text="Modifier Commentaire" textFill="WHITE"/>
+        <TextArea fx:id="commentField" layoutX="31.0" layoutY="57.0" prefHeight="179.0" prefWidth="500.0"
+                  promptText="Entrez votre commentaire ici..."/>
+        <Button layoutX="472.0" layoutY="257.0" mnemonicParsing="false" onAction="#modifierCommentaire"
+                text="Modifier"/>
+    </children>
+</AnchorPane>

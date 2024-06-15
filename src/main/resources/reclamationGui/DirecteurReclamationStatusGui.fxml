@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="firstborderpane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: #012545;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.reclamation.DirecteurReclamationStatusController">
+    <left>
+        <VBox fx:id="MainLeftSidebar" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="680.0" prefWidth="260.0" style="-fx-background-radius: 10; -fx-background-color: white;" translateX="0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="224.0" fitWidth="258.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/LOGO66.png" />
+                    </image>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </ImageView>
+                <Button mnemonicParsing="false" onAction="#BTNGestionTache" prefHeight="54.0" prefWidth="193.0" style="-fx-background-radius: 10;" text="Tache" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionEvennement" prefHeight="54.0" prefWidth="193.0" style="-fx-background-radius: 10;" text="Evennement" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionUser" prefHeight="54.0" prefWidth="193.0" style="-fx-background-radius: 10;" text="Utilisateur" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionRec" prefHeight="54.0" prefWidth="193.0" style="-fx-background-radius: 10; -fx-background-color: #012545;" text="Réclamation" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/complain.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionAct" prefHeight="54.0" prefWidth="193.0" style="-fx-background-radius: 10;" text="Actualité" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#BTNGestionEquipement" prefHeight="54.0" prefWidth="193.0" style="-fx-background-radius: 10;" text="Equipement" textFill="#012545">
+                    <font>
+                        <Font name="Arial Bold" size="20.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="20.0" />
+                    </VBox.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="20.0" right="10.0" top="20.0" />
+            </BorderPane.margin>
+            <effect>
+                <DropShadow />
+            </effect>
+        </VBox>
+    </left>
+    <center>
+        <BorderPane fx:id="SecondBorderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="571.0" prefWidth="845.0" style="-fx-background-color: white; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+            </BorderPane.margin>
+            <top>
+                <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="82.0" prefWidth="830.0" style="-fx-background-color: #012545; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ToggleButton mnemonicParsing="false" onAction="#BTNToggleSidebar" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 10;">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@assets/toggle.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Arial Bold" size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </ToggleButton>
+                        <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 10;" textFill="#012545">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@assets/settings.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="Arial Bold" size="20.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin>
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                        </Button>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </BorderPane.margin>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </HBox>
+            </top>
+            <center>
+                <AnchorPane fx:id="MainAnchorPaneBaladity" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="537.0" fitWidth="589.0" layoutX="181.0" layoutY="76.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/Baladia.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#012545" layoutX="292.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Consulter Les Réclamations :" wrappingWidth="298.1366729736328">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="113.0" layoutY="117.0" mnemonicParsing="false" onAction="#AfficherReclamationNTAction" prefHeight="101.0" prefWidth="117.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 10; -fx-font-size: 13;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="80.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/cancel.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fill="#012545" layoutX="665.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" traitées :" textAlignment="CENTER" wrappingWidth="158.93678283691406">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="699.0" layoutY="126.0" mnemonicParsing="false" onAction="#TraitementReclamationAction" prefHeight="57.0" prefWidth="84.0" styleClass="transparent-background" stylesheets="@css/styles.css">
+                     <graphic>
+                        <ImageView fitHeight="76.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/verified.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Text fill="#012545" layoutX="44.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="non traitées :" textAlignment="CENTER" wrappingWidth="275.73670959472656">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#012545" layoutX="320.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="en cours de traitement:" textAlignment="CENTER" wrappingWidth="275.73670959472656">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="404.0" layoutY="126.0" mnemonicParsing="false" onAction="#AfficherReclamationEncours" prefHeight="57.0" prefWidth="84.0" styleClass="transparent-background" stylesheets="@css/styles.css">
+                     <graphic>
+                        <ImageView fitHeight="76.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/work-in-progress.gif" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="4.0" layoutY="545.0" mnemonicParsing="false" onAction="#buttonReturn" prefHeight="54.0" prefWidth="79.0" style="-fx-background-color: #FFFFFF;" stylesheets="@css/styles.css">
+                     <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/left-arrow.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            </center>
+            <effect>
+                <DropShadow />
+            </effect>
+        </BorderPane>
+    </center>
+</BorderPane>

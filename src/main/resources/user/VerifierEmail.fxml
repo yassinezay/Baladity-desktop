@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="375.0" prefWidth="591.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.esprit.controllers.user.VerifierEmail">
+   <children>
+      <Text fill="#003668" layoutX="228.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verifier email">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TextField fx:id="OTPField" alignment="CENTER" layoutX="177.0" layoutY="157.0" promptText="Entrer le code ici" style="-fx-background-color: transparent; -fx-border-color: #003668; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button layoutX="371.0" layoutY="156.0" mnemonicParsing="false" onAction="#reEnvoyerButton" prefHeight="30.0" prefWidth="87.0" stylesheets="@../css/style.css" text="Réenvoyer" textFill="#fffbfb">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="252.0" layoutY="291.0" mnemonicParsing="false" onAction="#VerifierButton" prefHeight="30.0" prefWidth="87.0" stylesheets="@../css/style.css" text="Vérifier" textFill="#fffbfb">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

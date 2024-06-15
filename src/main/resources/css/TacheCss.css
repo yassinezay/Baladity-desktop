@@ -1,0 +1,66 @@
+/* Root styling */
+.root {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #012545;
+    -fx-fill: #012545;
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #012545;
+    -fx-border-color: #012545;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-background-radius: 8;
+}
+
+
+.button:hover {
+    -fx-background-color: #012545;
+    -fx-text-fill: #FFFFFF;
+}
+
+.button:selected {
+    -fx-background-color: #012545;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Text field styling */
+.text-field {
+    -fx-background-color: #012545;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Text area styling */
+.text-area {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #012545;
+    -fx-border-color: #012545;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+}
+.scroll-pane{
+    -fx-border-width: 4;
+}
+Label {
+    -fx-text-fill: #012545;
+    /*-fx-border-color: #012545;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;*/
+}
+
+Text {
+    -fx-fill:  #012545;
+}
+
+/* Validation icon styling */
+.validation-error .graphic,
+.validation-warning .graphic,
+.validation-info .graphic {
+    -fx-font-size: 24px; /* Increase the font size for validation icons */
+    -fx-min-width: 24px; /* Set minimum width to ensure icon is visible */
+    -fx-min-height: 24px; /* Set minimum height to ensure icon is visible */
+    -fx-max-width: 24px; /* Set maximum width to ensure icon doesn't exceed desired size */
+    -fx-max-height: 24px; /* Set maximum height to ensure icon doesn't exceed desired size */
+}
