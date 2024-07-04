@@ -8,3 +8,12 @@ Baladity is a cutting-edge application designed to bridge the communication gap 
 1) [Web](https://github.com/yassinezay/Baladity-web)
 2) [Mobile](https://github.com/yassinezay/Baladity-mobile)
 3) [Desktop](https://github.com/yassinezay/Baladity-desktop)
+
+## Here are some screenshots of our application:
+
+<p align="center">
+ <img src="src/main/resources/assets//img1.jpg">
+ <img src="src/main/resources/assets//img2.jpg">
+ </p>
+
+This application won't work due to missing the backend folder because it contains secret API keys, If you want to test the app contact me on my LinkedIn account
